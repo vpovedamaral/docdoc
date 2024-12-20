@@ -42,7 +42,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
 json-server --watch backend/db.json
 
-## ID
-Vous pouvez utiliser 
-id : valentin.poveda-amaral@efrei.net
+## Pour tester
+Vous pouvez utiliser<br>
+id : valentin.poveda-amaral@efrei.net<br>
 mdp : valentin
