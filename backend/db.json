@@ -1,0 +1,1097 @@
+{
+  "patients": [
+    {
+      "id": 1,
+      "name": "Valentin Poveda Amaral",
+      "email": "valentin.poveda-amaral@efrei.net",
+      "password": "valentin",
+      "birthdate": "2001-07-21",
+      "phone": "0601020307",
+      "address": "72 Rue de Carnot 72020 Paris"
+    },
+    {
+      "id": 2,
+      "name": "Lhukas Nelhomme",
+      "email": "lhukas.nelhomme@efrei.net",
+      "password": "lhukas",
+      "birthdate": "2001-09-14",
+      "phone": "0601020308",
+      "address": "72 rue des Noyers 93230 Romainville"
+    },
+    {
+      "id": 3,
+      "name": "Jean dupont",
+      "email": "jeandupont@gmail.com",
+      "password": "jean",
+      "birthdate": "1999-04-20",
+      "phone": "0634567891",
+      "address": "6 Avenue rivoli 75001 Paris"
+    }
+  ],
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Dr Jean Dupont",
+      "specialty": "Médecin généraliste",
+      "address": "25, rue de la République, 75001 Paris",
+      "conventioned": true,
+      "payment": "Espece / Carte bancaire",
+      "photo": "/assets/pictures/doctor.png"
+    },
+    {
+      "id": 2,
+      "name": "Dr Marie Leclerc",
+      "specialty": "Cardiologue",
+      "address": "14, avenue Victor Hugo, 69006 Lyon",
+      "conventioned": true,
+      "payment": "Espece",
+      "photo": "/assets/pictures/doctor.png"
+    },
+    {
+      "id": 3,
+      "name": "Dr Pierre Langlois",
+      "specialty": "Dermatologue",
+      "address": "32, rue du Maréchal Foch, 33000 Bordeaux",
+      "conventioned": true,
+      "payment": "Carte bancaire",
+      "photo": "/assets/pictures/doctor.png"
+    },
+    {
+      "id": 4,
+      "name": "Dr Antoine Bernard",
+      "specialty": "Ophtalmologue",
+      "address": "10, boulevard Gambetta, 13001 Marseille",
+      "conventioned": true,
+      "payment": "Espece",
+      "photo": "/assets/pictures/doctor.png"
+    },
+    {
+      "id": 5,
+      "name": "Dr Sophie Martin",
+      "specialty": "Pédiatre",
+      "address": "18, place Gambetta, 59000 Lille",
+      "conventioned": true,
+      "payment": "Espece / Carte bancaire",
+      "photo": "/assets/pictures/doctor.png"
+    },
+    {
+      "id": 6,
+      "name": "Dr Claire Fournier",
+      "specialty": "Gynécologue",
+      "address": "27, rue Saint-Denis, 44000 Nantes",
+      "conventioned": true,
+      "payment": "Carte bancaire",
+      "photo": "/assets/pictures/doctor.png"
+    }
+  ],
+  "appointments": [
+    {
+      "id": 1,
+      "patientId": 2,
+      "doctorId": 1,
+      "date": "2025-12-18",
+      "time": "04:00 PM",
+      "available": false
+    },
+    {
+      "id": 2,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2025-12-22",
+      "time": "08:00 AM",
+      "available": true
+    },
+    {
+      "id": 3,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2025-12-26",
+      "time": "02:00 PM",
+      "available": true
+    },
+    {
+      "id": 4,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "202-12-30",
+      "time": "05:00 PM",
+      "available": true
+    },
+    {
+      "id": 5,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2024-01-03",
+      "time": "06:00 PM",
+      "available": true
+    },
+    {
+      "id": 6,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2024-01-07",
+      "time": "09:00 AM",
+      "available": true
+    },
+    {
+      "id": 7,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2024-01-11",
+      "time": "06:00 PM",
+      "available": true
+    },
+    {
+      "id": 8,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2024-01-15",
+      "time": "06:00 PM",
+      "available": true
+    },
+    {
+      "id": 9,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2024-01-19",
+      "time": "01:00 PM",
+      "available": true
+    },
+    {
+      "id": 10,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2024-01-23",
+      "time": "04:00 PM",
+      "available": true
+    },
+    {
+      "id": 11,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2024-01-27",
+      "time": "02:00 PM",
+      "available": true
+    },
+    {
+      "id": 12,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2024-01-31",
+      "time": "08:00 AM",
+      "available": true
+    },
+    {
+      "id": 13,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2024-02-04",
+      "time": "03:00 PM",
+      "available": true
+    },
+    {
+      "id": 14,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2024-02-08",
+      "time": "10:00 AM",
+      "available": true
+    },
+    {
+      "id": 15,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2024-02-12",
+      "time": "03:00 PM",
+      "available": true
+    },
+    {
+      "id": 16,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2024-02-16",
+      "time": "04:00 PM",
+      "available": true
+    },
+    {
+      "id": 17,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2024-02-20",
+      "time": "03:00 PM",
+      "available": true
+    },
+    {
+      "id": 18,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2024-02-24",
+      "time": "05:00 PM",
+      "available": true
+    },
+    {
+      "id": 19,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2024-02-28",
+      "time": "08:00 AM",
+      "available": true
+    },
+    {
+      "id": 20,
+      "patientId": null,
+      "doctorId": 1,
+      "date": "2024-03-03",
+      "time": "10:00 AM",
+      "available": true
+    },
+    {
+      "id": 21,
+      "patientId": 1,
+      "doctorId": 1,
+      "date": "2024-12-25",
+      "time": "09:00 AM",
+      "available": false
+    },
+    {
+      "id": 22,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2025-12-18",
+      "time": "03:00 PM",
+      "available": true
+    },
+    {
+      "id": 23,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2025-12-22",
+      "time": "03:00 PM",
+      "available": true
+    },
+    {
+      "id": 24,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2025-12-26",
+      "time": "02:00 PM",
+      "available": true
+    },
+    {
+      "id": 25,
+      "patientId": 3,
+      "doctorId": 2,
+      "date": "2025-12-02",
+      "time": "08:00 AM",
+      "available": false
+    },
+    {
+      "id": 26,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2024-01-03",
+      "time": "06:00 PM",
+      "available": true
+    },
+    {
+      "id": 27,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2024-01-07",
+      "time": "04:00 PM",
+      "available": true
+    },
+    {
+      "id": 28,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2024-01-11",
+      "time": "06:00 PM",
+      "available": true
+    },
+    {
+      "id": 29,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2024-01-15",
+      "time": "05:00 PM",
+      "available": true
+    },
+    {
+      "id": 30,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2024-01-19",
+      "time": "08:00 AM",
+      "available": true
+    },
+    {
+      "id": 31,
+      "patientId": 1,
+      "doctorId": 2,
+      "date": "2024-01-23",
+      "time": "08:00 AM",
+      "available": false
+    },
+    {
+      "id": 32,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2024-01-27",
+      "time": "10:00 AM",
+      "available": true
+    },
+    {
+      "id": 33,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2024-01-31",
+      "time": "10:00 AM",
+      "available": true
+    },
+    {
+      "id": 34,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2024-02-04",
+      "time": "08:00 AM",
+      "available": true
+    },
+    {
+      "id": 35,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2024-02-08",
+      "time": "04:00 PM",
+      "available": true
+    },
+    {
+      "id": 36,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2024-02-12",
+      "time": "10:00 AM",
+      "available": true
+    },
+    {
+      "id": 37,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2024-02-16",
+      "time": "05:00 PM",
+      "available": true
+    },
+    {
+      "id": 38,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2024-02-20",
+      "time": "11:00 AM",
+      "available": true
+    },
+    {
+      "id": 39,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2024-02-24",
+      "time": "10:00 AM",
+      "available": true
+    },
+    {
+      "id": 40,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2024-02-28",
+      "time": "06:00 PM",
+      "available": true
+    },
+    {
+      "id": 41,
+      "patientId": 2,
+      "doctorId": 2,
+      "date": "2024-03-03",
+      "time": "03:00 PM",
+      "available": false
+    },
+    {
+      "id": 42,
+      "patientId": null,
+      "doctorId": 2,
+      "date": "2024-03-07",
+      "time": "08:00 AM",
+      "available": true
+    },
+    {
+      "id": 43,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2025-12-18",
+      "time": "02:00 PM",
+      "available": true
+    },
+    {
+      "id": 44,
+      "patientId": 2,
+      "doctorId": 3,
+      "date": "2025-12-06",
+      "time": "04:00 PM",
+      "available": false
+    },
+    {
+      "id": 45,
+      "patientId": 3,
+      "doctorId": 3,
+      "date": "2025-12-26",
+      "time": "04:00 PM",
+      "available": false
+    },
+    {
+      "id": 46,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2025-12-30",
+      "time": "02:00 PM",
+      "available": true
+    },
+    {
+      "id": 47,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2024-01-03",
+      "time": "09:00 AM",
+      "available": true
+    },
+    {
+      "id": 48,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2024-01-07",
+      "time": "01:00 PM",
+      "available": true
+    },
+    {
+      "id": 49,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2024-01-11",
+      "time": "05:00 PM",
+      "available": true
+    },
+    {
+      "id": 50,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2024-01-15",
+      "time": "02:00 PM",
+      "available": true
+    },
+    {
+      "id": 51,
+      "patientId": 3,
+      "doctorId": 3,
+      "date": "2024-01-19",
+      "time": "08:00 AM",
+      "available": false
+    },
+    {
+      "id": 52,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2024-01-23",
+      "time": "03:00 PM",
+      "available": true
+    },
+    {
+      "id": 53,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2024-01-27",
+      "time": "01:00 PM",
+      "available": true
+    },
+    {
+      "id": 54,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2024-01-31",
+      "time": "08:00 AM",
+      "available": true
+    },
+    {
+      "id": 55,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2024-02-04",
+      "time": "10:00 AM",
+      "available": true
+    },
+    {
+      "id": 56,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2024-02-08",
+      "time": "06:00 PM",
+      "available": true
+    },
+    {
+      "id": 57,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2024-02-12",
+      "time": "09:00 AM",
+      "available": true
+    },
+    {
+      "id": 58,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2024-02-16",
+      "time": "04:00 PM",
+      "available": true
+    },
+    {
+      "id": 59,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2024-02-20",
+      "time": "11:00 AM",
+      "available": true
+    },
+    {
+      "id": 60,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2024-02-24",
+      "time": "06:00 PM",
+      "available": true
+    },
+    {
+      "id": 61,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2024-02-28",
+      "time": "03:00 PM",
+      "available": true
+    },
+    {
+      "id": 62,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2024-03-03",
+      "time": "08:00 AM",
+      "available": true
+    },
+    {
+      "id": 63,
+      "patientId": null,
+      "doctorId": 3,
+      "date": "2024-03-07",
+      "time": "04:00 PM",
+      "available": true
+    },
+    {
+      "id": 64,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2025-12-18",
+      "time": "01:00 PM",
+      "available": true
+    },
+    {
+      "id": 65,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2025-12-22",
+      "time": "08:00 AM",
+      "available": true
+    },
+    {
+      "id": 66,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2025-12-26",
+      "time": "09:00 AM",
+      "available": true
+    },
+    {
+      "id": 67,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2025-12-30",
+      "time": "04:00 PM",
+      "available": true
+    },
+    {
+      "id": 68,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2024-01-03",
+      "time": "04:00 PM",
+      "available": true
+    },
+    {
+      "id": 69,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2024-01-07",
+      "time": "09:00 AM",
+      "available": true
+    },
+    {
+      "id": 70,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2024-01-11",
+      "time": "04:00 PM",
+      "available": true
+    },
+    {
+      "id": 71,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2024-01-15",
+      "time": "05:00 PM",
+      "available": true
+    },
+    {
+      "id": 72,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2024-01-19",
+      "time": "01:00 PM",
+      "available": true
+    },
+    {
+      "id": 73,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2024-01-23",
+      "time": "08:00 AM",
+      "available": true
+    },
+    {
+      "id": 74,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2024-01-27",
+      "time": "09:00 AM",
+      "available": true
+    },
+    {
+      "id": 75,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2024-01-31",
+      "time": "08:00 AM",
+      "available": true
+    },
+    {
+      "id": 76,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2024-02-04",
+      "time": "03:00 PM",
+      "available": true
+    },
+    {
+      "id": 77,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2024-02-08",
+      "time": "01:00 PM",
+      "available": true
+    },
+    {
+      "id": 78,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2024-02-12",
+      "time": "01:00 PM",
+      "available": true
+    },
+    {
+      "id": 79,
+      "patientId": 3,
+      "doctorId": 4,
+      "date": "2024-02-16",
+      "time": "10:00 AM",
+      "available": false
+    },
+    {
+      "id": 80,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2024-02-20",
+      "time": "08:00 AM",
+      "available": true
+    },
+    {
+      "id": 81,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2024-02-24",
+      "time": "11:00 AM",
+      "available": true
+    },
+    {
+      "id": 82,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2024-02-28",
+      "time": "08:00 AM",
+      "available": true
+    },
+    {
+      "id": 83,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2024-03-03",
+      "time": "06:00 PM",
+      "available": true
+    },
+    {
+      "id": 84,
+      "patientId": null,
+      "doctorId": 4,
+      "date": "2024-03-07",
+      "time": "10:00 AM",
+      "available": true
+    },
+    {
+      "id": 85,
+      "patientId": 1,
+      "doctorId": 5,
+      "date": "2025-12-18",
+      "time": "05:00 PM",
+      "available": false
+    },
+    {
+      "id": 86,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2025-12-22",
+      "time": "10:00 AM",
+      "available": true
+    },
+    {
+      "id": 87,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2025-12-26",
+      "time": "02:00 PM",
+      "available": true
+    },
+    {
+      "id": 88,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2025-12-30",
+      "time": "01:00 PM",
+      "available": true
+    },
+    {
+      "id": 89,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2024-01-03",
+      "time": "05:00 PM",
+      "available": true
+    },
+    {
+      "id": 90,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2024-01-07",
+      "time": "11:00 AM",
+      "available": true
+    },
+    {
+      "id": 91,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2024-01-11",
+      "time": "10:00 AM",
+      "available": true
+    },
+    {
+      "id": 92,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2024-01-15",
+      "time": "08:00 AM",
+      "available": true
+    },
+    {
+      "id": 93,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2024-01-19",
+      "time": "02:00 PM",
+      "available": true
+    },
+    {
+      "id": 94,
+      "patientId": 2,
+      "doctorId": 5,
+      "date": "2024-01-23",
+      "time": "11:00 AM",
+      "available": false
+    },
+    {
+      "id": 95,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2024-01-27",
+      "time": "04:00 PM",
+      "available": true
+    },
+    {
+      "id": 96,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2024-01-31",
+      "time": "06:00 PM",
+      "available": true
+    },
+    {
+      "id": 97,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2024-02-04",
+      "time": "11:00 AM",
+      "available": true
+    },
+    {
+      "id": 98,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2024-02-08",
+      "time": "10:00 AM",
+      "available": true
+    },
+    {
+      "id": 99,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2024-02-12",
+      "time": "02:00 PM",
+      "available": true
+    },
+    {
+      "id": 100,
+      "patientId": 1,
+      "doctorId": 5,
+      "date": "2024-02-16",
+      "time": "08:00 AM",
+      "available": false
+    },
+    {
+      "id": 101,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2024-02-20",
+      "time": "09:00 AM",
+      "available": true
+    },
+    {
+      "id": 102,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2024-02-24",
+      "time": "02:00 PM",
+      "available": true
+    },
+    {
+      "id": 103,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2024-02-28",
+      "time": "03:00 PM",
+      "available": true
+    },
+    {
+      "id": 104,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2024-03-03",
+      "time": "06:00 PM",
+      "available": true
+    },
+    {
+      "id": 105,
+      "patientId": null,
+      "doctorId": 5,
+      "date": "2024-03-07",
+      "time": "04:00 PM",
+      "available": true
+    },
+    {
+      "id": 106,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2025-12-18",
+      "time": "02:00 PM",
+      "available": true
+    },
+    {
+      "id": 107,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2025-12-22",
+      "time": "04:00 PM",
+      "available": true
+    },
+    {
+      "id": 108,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2025-12-26",
+      "time": "06:00 PM",
+      "available": true
+    },
+    {
+      "id": 109,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2025-12-30",
+      "time": "01:00 PM",
+      "available": true
+    },
+    {
+      "id": 110,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2024-01-03",
+      "time": "04:00 PM",
+      "available": true
+    },
+    {
+      "id": 111,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2024-01-07",
+      "time": "04:00 PM",
+      "available": true
+    },
+    {
+      "id": 112,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2024-01-11",
+      "time": "09:00 AM",
+      "available": true
+    },
+    {
+      "id": 113,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2024-01-15",
+      "time": "11:00 AM",
+      "available": true
+    },
+    {
+      "id": 114,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2024-01-19",
+      "time": "08:00 AM",
+      "available": true
+    },
+    {
+      "id": 115,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2024-01-23",
+      "time": "05:00 PM",
+      "available": true
+    },
+    {
+      "id": 116,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2024-01-27",
+      "time": "01:00 PM",
+      "available": true
+    },
+    {
+      "id": 117,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2024-01-31",
+      "time": "02:00 PM",
+      "available": true
+    },
+    {
+      "id": 118,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2024-02-04",
+      "time": "09:00 AM",
+      "available": true
+    },
+    {
+      "id": 119,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2024-02-08",
+      "time": "04:00 PM",
+      "available": true
+    },
+    {
+      "id": 120,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2024-02-12",
+      "time": "04:00 PM",
+      "available": true
+    },
+    {
+      "id": 121,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2024-02-16",
+      "time": "10:00 AM",
+      "available": true
+    },
+    {
+      "id": 122,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2024-02-20",
+      "time": "03:00 PM",
+      "available": true
+    },
+    {
+      "id": 123,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2024-02-24",
+      "time": "06:00 PM",
+      "available": true
+    },
+    {
+      "id": 124,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2024-02-28",
+      "time": "06:00 PM",
+      "available": true
+    },
+    {
+      "id": 125,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2024-03-03",
+      "time": "01:00 PM",
+      "available": true
+    },
+    {
+      "id": 126,
+      "patientId": null,
+      "doctorId": 6,
+      "date": "2024-03-07",
+      "time": "01:00 PM",
+      "available": true
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+<section class="text-gray-600 body-font">
+  <div class="container px-5 pt-10 pb-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-10">
+      <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Mon profil</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Veuillez mettre à jour les champs suivants afin que nous en sachions plus sur vous</p>
+    </div>
+
+    <div class="w-full mx-auto overflow-auto" style="display: flex;flex-wrap: wrap;justify-content:center" *ngIf="userForm">
+
+      <form [formGroup]="userForm!" class="mx-auto sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl shadow-2xl p-6 mb-6 bg-white rounded-md profile-card" (ngSubmit)="onSubmit()">
+        <div class="space-y-12">
+
+          <div class="border-b border-gray-900/10 pb-12">
+            <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+              <div class="col-span-full">
+                <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Nom complet</label>
+                <div class="mt-2">
+                  <input type="text" formControlName="name" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-teal-500 sm:text-sm sm:leading-6">
+                </div>
+              </div>
+
+              <div class="col-span-full">
+                <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Adresse mail</label>
+                <div class="mt-2">
+                  <input type="text" formControlName="email" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-teal-500 sm:text-sm sm:leading-6">
+                  <div *ngIf="userForm.get('email')?.hasError('invalidEmail')">
+                    <p class="text-red-500 text-sm mt-1">Il ne s'agit pas d'une email valide ! </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-span-full">
+                <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Adresse</label>
+                <div class="mt-2">
+                  <input type="text" formControlName="address" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-teal-500 sm:text-sm sm:leading-6">
+                  <div *ngIf="userForm.get('address')?.hasError('specialChars')">
+                    <p class="text-red-500 text-sm mt-1">L'adresse ne doit pas contenir de caractères spéciaux.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-span-full">
+                <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Date de naissance</label>
+                <div class="mt-2">
+                  <input type="date" formControlName="birthdate" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-teal-500 sm:text-sm sm:leading-6">
+                </div>
+              </div>
+
+              <div class="col-span-full">
+                <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Mot de passe</label>
+                <div class="mt-2">
+                  <input type="password" formControlName="password" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-teal-500 sm:text-sm sm:leading-6">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-6 flex items-center justify-end gap-x-6">
+          <a (click)="cancelProfile()"><button type="button" class="text-sm font-semibold leading-6 text-gray-900">Annuler</button></a>
+          <a><button type="submit" class="rounded-md bg-teal-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-teal-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-500">Enregistrer</button></a>
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+</section>
+

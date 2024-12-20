@@ -1,0 +1,35 @@
+svg {
+    fill: grey;
+    transform: rotate(45deg);
+    transition: fill 0.3s ease;
+  }
+
+  svg:hover {
+    fill: #4fd1c5;
+  }
+  p{
+    margin-bottom: 0.5rem !important;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px; 
+    padding: 20px;
+  }
+  .grid-item{
+    margin-bottom: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding:20px;
+  }
+
+@media (max-width: 1200px) {
+.grid-container{
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 750px) {
+    .grid-container{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }

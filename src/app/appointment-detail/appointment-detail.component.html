@@ -1,0 +1,33 @@
+<td [ngClass]="{'past-appointment': todayDate > (appointment?.date ?? '')}" class="py-3 px-6 text-left whitespace-nowrap">
+  <span class="font-bold">{{ appointment?.id }}</span>
+<td [ngClass]="{'past-appointment past-date': todayDate > (appointment?.date ?? '')}" class="py-3 px-6 text-left whitespace-nowrap">
+  <span class="font-bold" [appHighlightAppointment]="appointment?.date">{{ appointment?.date|customDateFormat:'dd/MM/YY'}}</span>
+</td>
+<td [ngClass]="{'past-appointment': todayDate > (appointment?.date ?? '')}" class="py-3 px-6 text-left whitespace-nowrap">
+  <span class="font-bold">{{ appointment?.time }}</span>
+</td>
+<td [ngClass]="{'past-appointment': todayDate > (appointment?.date ?? '')}" class="py-3 px-6 text-left" [ngClass]="{'past-appointment': todayDate > (appointment?.date ?? '')}">
+  <div class="flex items-center">
+    <div class="mr-2" >
+      <img class="w-8 h-8 rounded-full" src="{{ appointment?.doctor?.photo }}" />
+    </div>
+    <span class="font-bold">{{ appointment?.doctor?.name }}</span>
+  </div>
+</td>
+<td [ngClass]="{'past-appointment': todayDate > (appointment?.date ?? '')}" class="py-3 px-6 text-left whitespace-nowrap">
+  <span class="font-bold">{{ appointment?.doctor?.specialty }}</span>
+</td>
+<td [ngClass]="{'past-appointment': todayDate > (appointment?.date ?? '')}" class="py-3 px-6 text-left">
+  <div style="display: flex;gap:15px">
+    <button (click)="navigateDoctor(appointment?.doctor)" class="details-button text-sm leading-none text-slate-50 bg-teal-400 rounded hover:bg-teal-500 focus:outline-none" title="About my doctor">
+      <span style="position: relative;display: flex; justify-content: center;">
+        <img width="25px" height="25px" src="/assets/icons/eye.png">
+      </span>
+    </button>
+    <button (click)="cancelAppointment()" class="details-button cancel-button text-sm leading-none text-slate-50 bg-teal-400 rounded hover:bg-teal-500 focus:outline-none" title="Cancel this appointment">
+      <span style="position: relative;display: flex; justify-content: center;">
+        <img width="21px" src="/assets/icons/cancel.png">
+      </span>
+    </button>
+  </div>
+</td>

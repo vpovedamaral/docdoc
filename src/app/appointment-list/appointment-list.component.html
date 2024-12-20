@@ -1,0 +1,75 @@
+<section class="text-gray-600 body-font">
+  <div class="lg:max-w-7xl px-5 pt-10 pb-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Rendez-vous disponibles</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Vous avez besoin d'un rendez-vous avec l'un de nos médecins agréés ? Veuillez trouver ci-dessous les rendez-vous disponibles</p>
+    </div>
+
+    <div class="w-full mx-auto overflow-auto grid-container">
+
+
+        <article class="grid-item lg:p-8 md:p-4 sm:p-2" *ngFor="let appoint of appointments">
+          <div class="flex justify-between leading-none lg:p-4 md:p-4 sm:p-2">
+            <a class="no-underline flex items-center text-black">
+              <img style="width:60px; height:60px" class="block rounded-full" src="{{ appoint?.doctor?.photo }}">
+              <p class="ml-4 ">
+                <span class="font-bold">{{ appoint.doctor?.name }}</span><br>
+                <span>{{ appoint.doctor?.specialty }}</span>
+              </p>
+            </a>
+            <button (click)="addUserAppointment(appoint)" title="Book this appointment" class=" text-grey-darker hover:text-teal-500">
+              <svg width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" fill="none" width="24" height="24" />
+                <g>
+                  <path
+                    d="M19.1 4.9C15.2 1 8.8 1 4.9 4.9S1 15.2 4.9 19.1s10.2 3.9 14.1 0 4-10.3.1-14.2zm-4.3 11.3L12 13.4l-2.8 2.8-1.4-1.4 2.8-2.8-2.8-2.8 1.4-1.4 2.8 2.8 2.8-2.8 1.4 1.4-2.8 2.8 2.8 2.8-1.4 1.4z" />
+                </g>
+              </svg>
+            </button>
+          </div>
+          <div class="lg:p-4 md:p-4 sm:p-2">
+            <div class="flex items-center justify-left leading-tight">
+              <p class="text-base">
+                <a class="no-underline text-black font-bold">A propos de moi</a>
+              </p>
+            </div>
+            <div class="flex items-center justify-left leading-tight">
+              <p>
+                <a class="no-underline text-black">Adresse : <span
+                    class="text-grey-darker text-sm">{{ appoint.doctor?.address }}</span></a>
+              </p>
+            </div>
+            <div class="flex items-center justify-left leading-tight">
+              <p>
+                <a class="no-underline text-black">Conventionnée : <span
+                    class="text-grey-darker text-sm">{{ appoint?.doctor?.conventioned | conventionnedStatus}}</span></a>
+              </p>
+            </div>
+            <div class="flex items-center justify-left leading-tight">
+              <p>
+                <a class="no-underline text-black">Paiement : <span
+                    class="text-grey-darker text-sm">{{ appoint.doctor?.payment }}</span></a>
+              </p>
+            </div>
+            <div class="flex items-center justify-left leading-tight">
+              <p>
+                <a class="no-underline text-black font-bold">Rendez vous</a>
+              </p>
+            </div>
+            <div style="gap:15px" class="flex items-center justify-left leading-tight">
+              <p>
+                <a class="no-underline text-black">Date : <span
+                    class="text-grey-darker text-sm">{{ appoint?.date|customDateFormat:'dd/MM/YY'
+                  }}</span></a>
+              </p>
+              <p>
+                <a class="no-underline text-black">Heure : <span
+                    class="text-grey-darker text-sm">{{ appoint.time }}</span></a>
+              </p>
+            </div>
+          </div>
+        </article>
+
+    </div>
+  </div>
+</section>

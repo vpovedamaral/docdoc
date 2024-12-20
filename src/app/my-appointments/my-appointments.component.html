@@ -1,0 +1,42 @@
+<section class="text-gray-600 body-font">
+  <div class="container px-5 pt-10 pb-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Mes rendez vous</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Veuillez trouver ci-dessous les rendez-vous que vous avez réservés</p>
+    </div>
+
+    <div class="w-full">
+      <div class="bg-white shadow-md rounded my-6">
+        <table class="min-w-max w-full table-auto">
+          <thead>
+            <tr class="bg-gray-200 text-gray-600 text-sm leading-normal">
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-slate-50 text-sm bg-teal-400 rounded-tl rounded-bl">Identifiant</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-slate-50 text-sm bg-teal-400">Date</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-slate-50 text-sm bg-teal-400">Heure</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-slate-50 text-sm bg-teal-400">Docteur</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-slate-50 text-sm bg-teal-400">Spécialisation</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-slate-50 text-sm bg-teal-400 rounded-tr rounded-br">Plus</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-600 text-sm font-light">
+            <tr *ngFor="let appointment of myAppointments">
+              <app-appointment-detail  [appointment]="appointment" [patient]="myPatient" (onCancelAppointment)="handleCancelAppointment($event)"></app-appointment-detail>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+
+    <div style="display: flex;justify-content:center;gap:50px;margin-top:30px">
+      <div style="display:flex;align-items:center">
+        <span style="display:block;background-color:orange;height:20px;width:20px;margin-right:15px"></span>
+        <span>Rendez vous aujourd'hui</span>
+      </div>
+      <div style="display:flex;align-items:center">
+        <span style="display:block;background-color:yellow;height:20px;width:20px;margin-right:15px"></span>
+        <span>Rendez vous de la semaine</span>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</section>
